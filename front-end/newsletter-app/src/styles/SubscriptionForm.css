@@ -1,10 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
 .card-container {
   display: flex;
+  flex-direction: row;
   background-color: var(--black);
   border-radius: 10px;
   overflow: hidden;
-  width: 900px;
+  max-width: 900px;
+  width: 100%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  margin: 20px;
 }
 
 .form-content {
@@ -86,4 +93,46 @@
 }
 .message.success {
   color: green;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    max-width: 95%;
+    margin: 10px;
+  }
+
+  .image-content {
+    display: none;
+  }
+
+  .form-content {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .form-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+
+  .form-content p {
+    font-size: 1.5em;
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding: 0 5px;
+  }
+
+  .form-content .description {
+    font-size: 0.9em;
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding: 0 5px;
+  }
+
+  .form-content input,
+  .form-content button {
+    width: 100%;
+  }
 }

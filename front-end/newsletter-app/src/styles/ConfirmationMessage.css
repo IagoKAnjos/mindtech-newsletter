@@ -1,4 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 .confirmation-card {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  max-width: 900px;
+  width: 100%;
+  margin: 20px;
+
   justify-content: center;
   text-align: center;
 }
@@ -30,4 +42,35 @@
 
 .logo-bottom {
   width: 150px;
+  margin-top: auto;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .confirmation-card {
+    max-width: 95%;
+    margin: 10px;
+  }
+
+  .confirmation-content {
+    padding: 30px 20px;
+  }
+
+  .checkmark-icon {
+    width: 60px;
+  }
+
+  .confirmation-content h2 {
+    font-size: 1.5em;
+  }
+
+  .confirmation-content p {
+    font-size: 0.9em;
+    max-width: 100%;
+  }
+
+  .logo-bottom {
+    width: 120px;
+    padding-bottom: 30px;
+  }
 }
