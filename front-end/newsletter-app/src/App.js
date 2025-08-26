@@ -1,8 +1,8 @@
 // src/App.js
 import { useState } from "react";
-import "./App.css";
-import ConfirmationMessage from "./components/ConfirmationMessage";
-import SubscriptionForm from "./components/SubscriptionForm";
+import "../src/styles/App.css";
+import ConfirmationMessage from "./assets/components/ConfirmationMessage";
+import SubscriptionForm from "./assets/components/SubscriptionForm";
 
 function App() {
   const [isSubscribed, setIsSubscribed] = useState(false);

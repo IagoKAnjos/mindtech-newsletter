@@ -1,8 +1,8 @@
 // src/components/SubscriptionForm.js
 import { useState } from "react";
-import iotImage from "../../assets/images/Imagem.png";
-import logo from "../../assets/images/logo-mindtech.png";
 import "../../styles/SubscriptionForm.css";
+import iotImage from "../images/Imagem.png";
+import logo from "../images/logo-mindtech.svg";
 
 const SubscriptionForm = ({ onSubscribe, status, message }) => {
   const [email, setEmail] = useState("");
