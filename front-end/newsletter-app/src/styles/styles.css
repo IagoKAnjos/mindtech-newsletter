@@ -1,0 +1,19 @@
+:root {
+  --light-blue: #caddff;
+  --main-blue: #165cde;
+  --dark-blue: #092456;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--white);
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}

@@ -1,0 +1,8 @@
+@import "./styles/styles.css";
+
+/* Estilos globais como fontes, reset CSS, etc. */
+body {
+  font-family: Arial, sans-serif; /* Exemplo */
+  color: var(--white);
+  background-color: var(--dark-blue);
+}
