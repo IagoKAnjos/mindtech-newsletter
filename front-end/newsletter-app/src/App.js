@@ -11,7 +11,7 @@ function App() {
 
   const handleSubscribe = async (email) => {
     try {
-      const response = await fetch("http://localhost:3001/subscribe", {
+      const response = await fetch("http://localhost:3001/api/subscribe", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
