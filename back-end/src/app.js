@@ -1,4 +1,3 @@
-// src/app.js
 const express = require("express");
 const cors = require("cors");
 const subscriptionRoutes = require("./routes/subscription.routes");
